@@ -15,7 +15,6 @@ Olympic Explorer is a cross-platform mobile/desktop application built with [Kivy
 - [Database Schema](#database-schema)
 - [API Keys](#api-keys)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -149,7 +148,3 @@ OlympicExplorer/
 ## Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to open a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
