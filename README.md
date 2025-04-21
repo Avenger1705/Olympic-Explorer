@@ -141,8 +141,6 @@ OlympicExplorer/
 | villes    | VARCHAR | Host city                    |
 
 ## API Keys
-
-- **OpenWeatherMap**: Sign up at https://openweathermap.org/api and insert your key in `Weatherscreen.obtenir_meteo`.
 - **OpenAI**: Obtain your key at https://platform.openai.com and set it in `EcranAI.get_ai_response`.
 
 ## Contributing
