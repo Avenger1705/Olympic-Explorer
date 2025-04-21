@@ -1,0 +1,4 @@
+kivy
+mysql-connector-python
+Pillow
+requests
