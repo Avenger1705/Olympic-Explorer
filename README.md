@@ -49,7 +49,7 @@ Olympic Explorer is a cross-platform mobile/desktop application built with [Kivy
 
 ## Demo
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 ## Installation
 
