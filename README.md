@@ -115,10 +115,6 @@ OlympicExplorer/
 │   └── stades/          # Stadium photos for overlays
 ├── font.ttf             # Font for image text overlays
 ├── main.py              # Entry point and App class
-├── screens/             # (optional) Split classes per file
-│   ├── permission.py
-│   ├── events.py
-│   └── chat.py
 ├── requirements.txt     # Python dependencies
 └── README.md
 ```
