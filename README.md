@@ -69,58 +69,34 @@ Olympic Explorer is a cross-platform mobile/desktop application built with [Kivy
    pip install -r requirements.txt
    ```
 
-Configuration
-MySQL Database (via XAMPP)
-Start XAMPP
+## Configuration
 
-Launch the XAMPP Control Panel.
+### MySQL Database (via XAMPP)
 
-Start Apache and MySQL.
+1. **Start XAMPP**  
+   - Launch the XAMPP Control Panel.  
+   - Start **Apache** and **MySQL**.
 
-Open phpMyAdmin
+2. **Open phpMyAdmin**  
+[http://localhost/phpmyadmin](http://localhost/phpmyadmin)
 
-In your browser, go to:
+3. **Create the database**  
+- In the sidebar click **New**.  
+- Enter `jeux_olympiques` as the name and hit **Create**.
 
-arduino
-Copy
-Edit
-http://localhost/phpmyadmin
-Create the database
+4. **Import the SQL dump**  
+- Select your new `jeux_olympiques` database.  
+- Go to the **Import** tab, click **Choose File**, select `jeux_olympiques.sql`, then **Go**.  
+- phpMyAdmin will populate the `evenements` table automatically.
 
-In phpMyAdmin’s sidebar, click New.
-
-Enter jeux_olympiques as the database name and click Create.
-
-Import the provided SQL dump
-
-Select your new jeux_olympiques database in the sidebar.
-
-Go to the Import tab.
-
-Click Choose File, select jeux_olympiques.sql from your project folder, then click Go.
-
-phpMyAdmin will execute the script and populate the evenements table with all event data.
-
-Verify credentials
-
-By default XAMPP’s MySQL user is root with no password.
-
-Make sure in your main.py (or wherever you connect) you have:
-
-python
-Copy
-Edit
+5. **Verify your connection settings**  
+```python
 self.db_connection = mysql.connector.connect(
     host="localhost",
     user="root",
     password="",
     database="jeux_olympiques"
 )
-Assets & API keys
-
-Place your images in img/autre/ and img/stades/ as before.
-
-Update your OpenWeatherMap and OpenAI keys in the code (see the API Keys section).
 ## Usage
 
 Run the app:
