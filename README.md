@@ -69,33 +69,58 @@ Olympic Explorer is a cross-platform mobile/desktop application built with [Kivy
    pip install -r requirements.txt
    ```
 
-## Configuration
+Configuration
+MySQL Database (via XAMPP)
+Start XAMPP
 
-1. **MySQL Database**:
-   - Create a database named `jeux_olympiques`.
-   - Create an `evenements` table matching the fields used in the app:
-     ```sql
-     CREATE TABLE evenements (
-       id INT PRIMARY KEY,
-       evenement VARCHAR(100),
-       event_name VARCHAR(255),
-       date DATE,
-       time TIME,
-       stades VARCHAR(255),
-       villes VARCHAR(255)
-     );
-     ```
-   - Populate it with Paris 2024 event data.
+Launch the XAMPP Control Panel.
 
-2. **Assets**:
-   - Place the UI images under `img/autre/` (e.g., `Olympic_Explorer.png`, `check.png`, `retour.png`, `OE_AI.png`).
-   - Place stadium images named `<StadeName>.jpg/png` under `img/stades/`.
-   - Ensure a `font.ttf` file is available in the project root for overlays.
+Start Apache and MySQL.
 
-3. **API Keys**:
-   - OpenWeatherMap: replace the placeholder API key in `Weatherscreen.obtenir_meteo` with your own.
-   - OpenAI: configure your OpenAI key in the request header of `EcranAI.get_ai_response`.
+Open phpMyAdmin
 
+In your browser, go to:
+
+arduino
+Copy
+Edit
+http://localhost/phpmyadmin
+Create the database
+
+In phpMyAdmin’s sidebar, click New.
+
+Enter jeux_olympiques as the database name and click Create.
+
+Import the provided SQL dump
+
+Select your new jeux_olympiques database in the sidebar.
+
+Go to the Import tab.
+
+Click Choose File, select jeux_olympiques.sql from your project folder, then click Go.
+
+phpMyAdmin will execute the script and populate the evenements table with all event data.
+
+Verify credentials
+
+By default XAMPP’s MySQL user is root with no password.
+
+Make sure in your main.py (or wherever you connect) you have:
+
+python
+Copy
+Edit
+self.db_connection = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="",
+    database="jeux_olympiques"
+)
+Assets & API keys
+
+Place your images in img/autre/ and img/stades/ as before.
+
+Update your OpenWeatherMap and OpenAI keys in the code (see the API Keys section).
 ## Usage
 
 Run the app:
