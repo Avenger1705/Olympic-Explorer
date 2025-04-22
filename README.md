@@ -54,7 +54,7 @@ Olympic Explorer is a cross-platform mobile/desktop application built with [Kivy
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/<your-username>/OlympicExplorer.git
+   git clone https://github.com/Avenger1705/Olympic-Explorer.git
    cd OlympicExplorer
    ```
 
