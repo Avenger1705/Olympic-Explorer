@@ -55,7 +55,7 @@ Olympic Explorer is a cross-platform mobile/desktop application built with [Kivy
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/Avenger1705/Olympic-Explorer.git
-   cd OlympicExplorer
+   cd Olympic-Explorer
    ```
 
 2. **Create a virtual environment** (recommended):
@@ -110,7 +110,7 @@ The app will open a window where you can select your role and begin exploring ev
 ## Project Structure
 
 ```
-OlympicExplorer/
+Olympic-Explorer/
 ├── img/
 │   ├── autre/           # UI and icon images
 │   └── stades/          # Stadium photos for overlays
