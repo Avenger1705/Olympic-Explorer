@@ -100,7 +100,7 @@ self.db_connection = mysql.connector.connect(
 ## Usage
 
 Run the app:
-```bash
+```
 python main.py   # or python olympic_explorer.py
 ```
 
