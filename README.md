@@ -98,7 +98,7 @@ self.db_connection = mysql.connector.connect(
     database="jeux_olympiques"
 )
 ## Usage
-
+```
 Run the app:
 ```bash
 python main.py   # or python olympic_explorer.py
