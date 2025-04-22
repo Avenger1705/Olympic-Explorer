@@ -102,7 +102,7 @@ self.db_connection = mysql.connector.connect(
 
 Run the app:
 ```bash
-python main.py   # or python olympic_explorer.py
+python main.py
 ```
 
 The app will open a window where you can select your role and begin exploring events.
